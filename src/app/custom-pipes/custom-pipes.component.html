@@ -1,0 +1,17 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+          <h6 style="padding-top: 5%;">Custom Pipe to replace special characters with space : </h6>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="col-sm-6">
+          <input type="text" class="form-control" [(ngModel)]='customPipe'>
+          <h6 style="padding-top: 5%;" *ngIf='customPipe'>Output : {{customPipe | specialcharacters}}</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
