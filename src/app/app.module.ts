@@ -1,14 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { SpecialCharactersPipe } from './custom-pipes/special-characters.pipe';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+import { SpecialCharactersPipe } from './custom-pipes/special-characters.pipe';
 import { AppComponent } from './app.component';
 import { PlayersComponent } from './players/players.component';
 import { CountryFlagComponent } from './country-flag/country-flag.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CustomPipesComponent } from './custom-pipes/custom-pipes.component';
+import { BasicFormsComponent } from './basic-forms/basic-forms.component';
 
 @NgModule({
   declarations: [
@@ -17,11 +18,13 @@ import { CustomPipesComponent } from './custom-pipes/custom-pipes.component';
     CountryFlagComponent,
     SpecialCharactersPipe,
     DashboardComponent,
-    CustomPipesComponent
+    CustomPipesComponent,
+    BasicFormsComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule
   ],
   providers: [],
